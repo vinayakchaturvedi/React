@@ -1,5 +1,5 @@
 import React from "react"
-import Greet from "./class-based-components/Greet";
+import State from "./state/State"
 
 /*function App() {          //functional component
 
@@ -10,21 +10,12 @@ import Greet from "./class-based-components/Greet";
     )
 }*/
 
-class App extends React.Component {             //class based component
-
-    constructor() {
-        super();
-        this.state = {
-            name: "Vinayak",
-            age: 24
-        }
-    }
+class App extends React.Component {
 
     render() {
         return (
             <div>
-                <h1>{this.state.name}</h1>
-                <h3>{this.state.age} years old</h3>
+                <State />
             </div>
         )
     }
