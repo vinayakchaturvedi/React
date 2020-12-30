@@ -1,22 +1,23 @@
 import React from "react"
 
-import TodoItem from "./todolist/TodoItem"
-import todoData from "./todolist/TodoData"
-
-function App() {
-
-    let todoComponents = todoData.map(item =>
-        <TodoItem
-            key={item.id}            //some unique id
-            text={item.text}
-        />
-    )
+/*function App() {          //functional component
 
     return (
         <div>
-            {todoComponents}
+            <h1>Hello World!</h1>
         </div>
     )
+}*/
+
+class App extends React.Component {             //class based component
+
+    render() {
+        return (
+            <div>
+                <h1>Hello World!</h1>           {/*{this.props}*/}
+            </div>
+        )
+    }
 }
 
 export default App
