@@ -1,4 +1,5 @@
 import React from "react"
+import Greet from "./class-based-components/Greet";
 
 /*function App() {          //functional component
 
@@ -14,7 +15,7 @@ class App extends React.Component {             //class based component
     render() {
         return (
             <div>
-                <h1>Hello World!</h1>           {/*{this.props}*/}
+                <Greet />
             </div>
         )
     }
