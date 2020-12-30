@@ -12,10 +12,19 @@ import Greet from "./class-based-components/Greet";
 
 class App extends React.Component {             //class based component
 
+    constructor() {
+        super();
+        this.state = {
+            name: "Vinayak",
+            age: 24
+        }
+    }
+
     render() {
         return (
             <div>
-                <Greet />
+                <h1>{this.state.name}</h1>
+                <h3>{this.state.age} years old</h3>
             </div>
         )
     }
