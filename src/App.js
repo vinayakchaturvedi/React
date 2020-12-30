@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+
+import Joke from "./Joke"
+import JokesData from "./JokesData"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const jokeComponents = JokesData.map(joke =>
+        <Joke
+            key={joke.id}            //some unique id
+            question={joke.question}
+            punchLine={joke.punchLine}
+        />
+    )
+
+    return (
+        <div>
+            {jokeComponents}
+        </div>
+    )
 }
 
-export default App;
+export default App
