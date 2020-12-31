@@ -1,5 +1,6 @@
 import React from "react"
-import State from "./state/State"
+import todoData from "./todolist/TodoData"
+import TodoItem from "./todolist/TodoItem";
 
 /*function App() {          //functional component
 
@@ -13,9 +14,15 @@ import State from "./state/State"
 class App extends React.Component {
 
     render() {
+        const todoComponents = todoData.map(
+            item => <TodoItem
+                item = {item}
+            />
+        )
+
         return (
             <div>
-                <State />
+                {todoComponents}
             </div>
         )
     }
