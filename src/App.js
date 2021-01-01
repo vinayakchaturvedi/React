@@ -1,6 +1,5 @@
 import React from "react"
-import todoData from "./todolist/TodoData"
-import TodoItem from "./todolist/TodoItem";
+import ChangeState from "./state/ChangeState.js"
 
 /*function App() {          //functional component
 
@@ -14,15 +13,9 @@ import TodoItem from "./todolist/TodoItem";
 class App extends React.Component {
 
     render() {
-        const todoComponents = todoData.map(
-            item => <TodoItem
-                item = {item}
-            />
-        )
-
         return (
             <div>
-                {todoComponents}
+                <ChangeState />
             </div>
         )
     }
