@@ -1,5 +1,5 @@
 import React from "react"
-import ConditionalRender from "./conditional_rendering/ConditionalRender";
+import ConditionalRender2 from "./conditional_rendering/ConditionalRender2";
 
 /*function App() {          //functional component
 
@@ -16,7 +16,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <ConditionalRender/>
+                <ConditionalRender2/>
             </div>
         )
     }
