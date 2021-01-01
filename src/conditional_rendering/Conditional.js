@@ -2,9 +2,9 @@ import React, {Component} from "react"
 
 class Conditional extends Component {
 
-    render(props) {
+    render() {
         return (
-                <h1>{this.props.isLoading ? "Loading..." : "Loaded"}</h1>
+                <h1>Loaded</h1>
         )
     }
 }

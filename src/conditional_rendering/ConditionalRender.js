@@ -22,9 +22,7 @@ class ConditionalRender extends Component {
     render() {
         return (
             <div>
-                <Conditional
-                    isLoading={this.state.isLoading}
-                />
+                {this.state.isLoading ? <h1>Loading...</h1> : <Conditional/>}
             </div>
         )
     }
