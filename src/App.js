@@ -1,5 +1,5 @@
 import React from "react"
-import ChangeState from "./state/ChangeState.js"
+import RenderTodo from "./todolist/RenderTodo";
 
 /*function App() {          //functional component
 
@@ -13,9 +13,10 @@ import ChangeState from "./state/ChangeState.js"
 class App extends React.Component {
 
     render() {
+
         return (
             <div>
-                <ChangeState />
+                <RenderTodo/>
             </div>
         )
     }
