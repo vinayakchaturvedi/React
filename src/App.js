@@ -1,5 +1,5 @@
 import React from "react"
-import Fetch from "./fetch-data-using-api/Fetch";
+import FormPart1 from "./forms/FormPart1";
 
 /*function App() {          //functional component
 
@@ -16,7 +16,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <Fetch/>
+                <FormPart1/>
             </div>
         )
     }
