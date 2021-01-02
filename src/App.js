@@ -1,5 +1,5 @@
 import React from "react"
-import RenderTodo from "./todolist/RenderTodo";
+import Fetch from "./fetch-data-using-api/Fetch";
 
 /*function App() {          //functional component
 
@@ -16,7 +16,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <RenderTodo/>
+                <Fetch/>
             </div>
         )
     }
