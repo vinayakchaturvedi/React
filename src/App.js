@@ -1,5 +1,5 @@
 import React from "react"
-import ConditionalRenderingPractice from "./conditional_rendering/ConditionalRenderingPractice";
+import RenderTodo from "./todolist/RenderTodo";
 
 /*function App() {          //functional component
 
@@ -16,7 +16,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <ConditionalRenderingPractice/>
+                <RenderTodo/>
             </div>
         )
     }
