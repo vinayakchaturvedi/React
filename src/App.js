@@ -1,5 +1,5 @@
 import React from "react"
-import FormPart1 from "./forms/FormPart1";
+import FormPart2 from "./forms/FormPart2";
 
 /*function App() {          //functional component
 
@@ -16,7 +16,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <FormPart1/>
+                <FormPart2/>
             </div>
         )
     }
