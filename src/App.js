@@ -1,5 +1,6 @@
 import React from "react"
-import FormSubmit from "./forms/FormSubmit";
+import Header from "./meme-generator/Header";
+import MemeGenerator from "./meme-generator/MemeGenerator";
 
 /*function App() {          //functional component
 
@@ -16,7 +17,8 @@ class App extends React.Component {
 
         return (
             <div>
-                <FormSubmit/>
+                <Header/>
+                <MemeGenerator/>
             </div>
         )
     }
